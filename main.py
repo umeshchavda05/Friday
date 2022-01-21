@@ -6,6 +6,8 @@ import requests
 import json
 from replit import db
 from keep_alive import keep_alive
+my_secret = os.environ['token']
+
 
 bot = commands.Bot(command_prefix = ">")
 
@@ -216,4 +218,4 @@ msg = "Hi! I'm Friday! I was made by uc. I can't do much yet. You can check if I
 
 
 keep_alive()
-bot.run("ODIzOTQ3NzU1OTAxODEyNzk3.YFoPJQ.pyMe1Cwcam6BSGpEWwYyeP9vhY4")
+bot.run(my_secret)
